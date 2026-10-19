@@ -7,7 +7,7 @@ class Drink:
 
     def display_info(self):
         insert = f"{self.name} ({self.size}) - {self.price} SAR"
-        print(insert)
+        return insert
 
     def change_price(self, new_price):
         self.price = new_price
@@ -17,7 +17,7 @@ class Drink:
         self.price = self.price - (self.price * percentage / 100)
         return percentage
 
-        
+
 # Create Opjects
 First_drink = Drink("V60", "Medium", 18)
 Second_drink = Drink("Espresso", "Small", 12)
