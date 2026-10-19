@@ -1,6 +1,6 @@
 
 
-class coffeeshop:
+class Coffee:
     def __init__(self, name:str, price: float, size: str)-> None:
 
         self.name = name
@@ -18,9 +18,9 @@ class coffeeshop:
         self.price = self.price - self.price * percentage / 100
  
  
-latte = coffeeshop('Latte', 18, 'Medium')
-espresso = coffeeshop('Espresso', 12, 'Small')
-cappuccino = coffeeshop('Cappuccino', 22, 'Large')
+latte = Coffee('Latte', 18, 'Medium')
+espresso = Coffee('Espresso', 12, 'Small')
+cappuccino = Coffee('Cappuccino', 22, 'Large')
 
 print()
 print('--- Coffee Shop Menu ---')
