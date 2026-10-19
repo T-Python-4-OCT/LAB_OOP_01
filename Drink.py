@@ -16,7 +16,7 @@ class Drink:
     def apply_discount(self, percentage):
         self.price = self.price - (self.price * percentage / 100)
         return percentage
-
+        
 
 # Create Opjects
 First_drink = Drink("V60", "Medium", 18)
@@ -25,9 +25,9 @@ Third_drink = Drink("Latte", "Large", 20)
 
 # Display menu
 print("=== Coffee Shop Menu ===")
-First_drink.display_info()
-Second_drink.display_info()
-Third_drink.display_info()
+print(First_drink.display_info())
+print(Second_drink.display_info())
+print(Third_drink.display_info())
 
 # Change price & Discount
 First_drink.change_price(20)
@@ -35,5 +35,5 @@ Third_drink.apply_discount(25)
 
 # Update 
 print("=== Updated Menu ===")
-First_drink.display_info()
-Third_drink.display_info()
+print(First_drink.display_info())
+print(Third_drink.display_info())
